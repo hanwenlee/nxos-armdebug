@@ -13,6 +13,16 @@
 
 #include "base/lib/bbr/actuator.h"
 
+
+/** @addtogroup bbr*/
+/*@{*/
+
+/** @defgroup sensorReading Sensor Readings
+ *
+ *   Sensor Readings of Behavior-Based Robotics Framework
+ */
+/*@{*/
+
 #define RADAR_DIST_ERR	255	/**< Distance value for error reading by ultrasonic sensor. */
 #define RADAR_DIST_NOOBJECT	0	/**< Distance value for no object detected ultrasonic sensor. */
 
@@ -132,4 +142,7 @@ void light_led_enable(Sensor *sensor);
  *    @param sensor   [in] : sensor with associated sensor type and port number
  */
 void light_led_disable(Sensor *sensor);
+
+/*@}*/
+/*@}*/
 #endif

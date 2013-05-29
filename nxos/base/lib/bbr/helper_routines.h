@@ -9,6 +9,15 @@
 #include "base/types.h"
 #include "base/lib/bbr/sensor.h"
 
+/** @addtogroup bbr*/
+/*@{*/
+
+/** @defgroup helperRoutines Helper Routines
+ *
+ * Helper routines of Behavior-Based Robotics Framework
+ */
+/*@{*/
+
 /**
  * Check if the timer value has expired
  *    @param curr_time    [in] : Current timer value
@@ -53,4 +62,7 @@ void setDisplayDur(U32 duration);
 void displaySensorReadings(char *string1, SensorReading *reading1, char *string2, SensorReading *reading2, char *string3, SensorReading *reading3,
 		char *string4, SensorReading *reading4, char *string5, SensorReading *reading5, char *string6, SensorReading *reading6,
 		char *string7, SensorReading *reading7, char *string8, SensorReading *reading8);
+
+/*@}*/
+/*@}*/
 #endif

@@ -9,6 +9,15 @@
 
 #include "base/lib/bbr/actuator.h"
 
+/** @addtogroup bbr*/
+/*@{*/
+
+/** @defgroup arbiter Arbiter
+ *
+ * Arbiter of Behavior-Based Robotics Framework
+ */
+/*@{*/
+
 /**
  * Choose the winner(s) among the behaviors for controlling motors and speaker. Then, copy the winning portion of
  * behavior actuator state into corresponding portion of robot's current actuator state.
@@ -19,4 +28,7 @@
  *    @param behavior_actuations	[in]: Array of behavior actuator state
  */
 void arbiters(int num_behaviors, Actuators *actuators, ActuatorState *current_state, ActuatorState behavior_actuations[]);
+
+/*@}*/
+/*@}*/
 #endif

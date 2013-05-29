@@ -68,7 +68,11 @@
  */
 
 /**@{*/
-
+/** @defgroup bbr Behavior-Based Robotics(BBR) Framework
+ *
+ * This component documents APIs that are commonly used by a Behavior-based
+ * robotics program
+ */
 /**@}*/
 
 #endif /* __NXOS_BASE_DOC_H__ */

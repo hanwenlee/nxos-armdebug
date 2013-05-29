@@ -11,6 +11,15 @@
 #include "base/types.h"
 #include "base/lib/bbr/actuator.h"
 
+/** @addtogroup bbr*/
+/*@{*/
+
+/** @defgroup actuator Actuator
+ *
+ * Actuators of Behavior-Based Robotics Framework
+ */
+/*@{*/
+
 
 #define MOTOR_INHIBITED 0xFFFFFF80	/**< Speed value(in word) for motor inhibited. */
 #define MOTOR_INHIBITED_BYTE (MOTOR_INHIBITED & 0xFF)		/**< Speed value(in byte) for motor inhibited. */
@@ -118,5 +127,8 @@ void setActuators(Actuators *actuators, ActuatorType actuatorAType,ActuatorType 
  *    @param stateNum				 [in]: Index number of available actuator state to be copied
  */
 void copyActuatorState(int behaviorNum, ActuatorState behavior_actuations[], ActuatorState state[], int stateNum);
+
+/*@}*/
+/*@}*/
 
 #endif

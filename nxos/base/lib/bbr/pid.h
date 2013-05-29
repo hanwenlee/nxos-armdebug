@@ -8,6 +8,15 @@
 
 #include "base/types.h"
 
+/** @addtogroup bbr*/
+/*@{*/
+
+/** @defgroup pid PID Controller
+ *
+ * PID Control of Behavior-Based Robotics Framework
+ */
+/*@{*/
+
 
 /**
  * PID Controller Data Structure
@@ -58,4 +67,7 @@ bool checkPIDEnd(struct PID_Control *pid);
  *    @return PID Controller output value
  */
 S32 PIDController(struct PID_Control *pid, U8 systemStatus);
+
+/*@}*/
+/*@}*/
 #endif
