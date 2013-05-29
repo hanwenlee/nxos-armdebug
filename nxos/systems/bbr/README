@@ -24,8 +24,8 @@ added to the existing BBR program.
 	
 	
 	Behaviors(high to low):
-	- Follow-Line	: robot follows a black line
-	- Idle Behavior	: stop all robot's movement and play tone periodically
+	- Follow-Line: robot follows a black line
+	- Idle Behavior: stop all robot's movement and play tone periodically
 	
 
 3) grasper
@@ -35,10 +35,10 @@ added to the existing BBR program.
 	- Use of touch sensor
 	
 	Behaviors(high to low):
-	- Grasp-Object	: close the claws to grasp an object
-	- Open-Claws	: open the claws when touching no object
-	- Follow-Line	: robot follows a black line
-	- Idle Behavior	: stop all robot's movement and play tone periodically
+	- Grasp-Object: close the claws to grasp an object
+	- Open-Claws: open the claws when touching no object
+	- Follow-Line: robot follows a black line
+	- Idle Behavior: stop all robot's movement and play tone periodically
 	
 4)  mover
 
@@ -48,11 +48,11 @@ added to the existing BBR program.
 	
 	
 	Behaviors(high to low):
-	- Move-Object	: move the object based on sound level
-	- Grasp-Object	: close the claws to grasp an object
-	- Open-Claws	: open the claws when touching no object
-	- Follow-Line	: robot follows a black line
-	- Idle Behavior	: stop all robot's movement and play tone periodically
+	- Move-Object: move the object based on sound level
+	- Grasp-Object: close the claws to grasp an object
+	- Open-Claws: open the claws when touching no object
+	- Follow-Line: robot follows a black line
+	- Idle Behavior: stop all robot's movement and play tone periodically
 
 5) tribot
 
@@ -62,7 +62,7 @@ added to the existing BBR program.
 	
 	Behaviors(high to low):
 	- Avoid-Obstacle: keep a minimum distance from the large obstacle 
-					  (such as wall)
+	  (such as wall)
 	- Move-Object	: move the object based on sound level
 	- Grasp-Object	: close the claws to grasp an object
 	- Open-Claws	: open the claws when touching no object
@@ -77,11 +77,11 @@ added to the existing BBR program.
 	
 	
 	Behaviors(high to low):
-	- Avoid-Wall	: turn right for about 90 degree when wall(large obstacle)
-					  is detected
-	- Hike-Mountain : slow speed(low power) on flat surface, but fast speed
-					  (high power) on uphill
-	- Idle 			: stop all robot's movement and play tone periodically
+	- Avoid-Wall: turn right for about 90 degree when wall(large obstacle)
+	  is detected
+	- Hike-Mountain: slow speed(low power) on flat surface, but fast speed
+	  (high power) on uphill
+	- Idle: stop all robot's movement and play tone periodically
 
 
 
