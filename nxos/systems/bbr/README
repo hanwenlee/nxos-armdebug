@@ -1,0 +1,93 @@
+These are several sample Behavior-Based Robotics(BBR) programs to demonstrate the use of
+BBR Framework(located at base/lib/bbr) and how behaviors can be added to the existing BBR program.
+ 
+ =======================
+|| Sample BBR Programs ||
+========================
+
+1) framework
+
+	Descriptions:
+	- Serve as the start for programmer to create BBR program
+	- A complete working BBR program in simplest form (with only a behavior)
+	
+	Behaviors(high to low):
+	- Idle Behavior: stop all robot's movement and play tone periodically
+	
+2) linefollower
+
+	Descriptions:
+	- Demonstrate the changes required to add a second behavior
+	- Use of light sensor
+	- Collect samples of input and work out the maximum and minimum values
+	
+	
+	Behaviors(high to low):
+	- Follow-Line	: robot follows a black line
+	- Idle Behavior	: stop all robot's movement and play tone periodically
+	
+
+3) grasper
+
+	Descriptions:
+	- Get the position of claws
+	- Use of touch sensor
+	
+	Behaviors(high to low):
+	- Grasp-Object	: close the claws to grasp an object
+	- Open-Claws	: open the claws when touching no object
+	- Follow-Line	: robot follows a black line
+	- Idle Behavior	: stop all robot's movement and play tone periodically
+	
+4)  mover
+
+	Descriptions:
+	- Use of Hysteresis and leaky accumulator
+	- Use of sound sensor
+	
+	
+	Behaviors(high to low):
+	- Move-Object	: move the object based on sound level
+	- Grasp-Object	: close the claws to grasp an object
+	- Open-Claws	: open the claws when touching no object
+	- Follow-Line	: robot follows a black line
+	- Idle Behavior	: stop all robot's movement and play tone periodically
+
+5) tribot
+
+	Descriptions:
+	- use of PID Controller to control motor movement
+	- use of ultrasonic sensor
+	
+	Behaviors(high to low):
+	- Avoid-Obstacle: keep a minimum distance from the large obstacle (such as wall)
+	- Move-Object	: move the object based on sound level
+	- Grasp-Object	: close the claws to grasp an object
+	- Open-Claws	: open the claws when touching no object
+	- Follow-Line	: robot follows a black line
+	- Idle 			: stop all robot's movement and play tone periodically
+	
+6)  hiker
+
+	Descriptions:
+	- Use of accelerometer for robot to know which way up it is
+	- Use of compass to have a better turning control
+	
+	
+	Behaviors(high to low):
+	- Avoid-Wall	: turn right for about 90 degree when wall(large obstacle) is detected
+	- Hike-Mountain : slow speed(low power) on flat surface, but fast speed(high power) on uphill
+	- Idle 			: stop all robot's movement and play tone periodically
+
+
+
+Important Notes!
+- the robot for framework, linefollower, grasper, mover and tribot, is bulit according to bulid instruction in /build_instr
+- hiker robot is built by making the following modifications to robot model in /build_instr:
+	a) attach the accelerometer sensor to the right side of NXT with black color portion heading to motor ports direction,
+	   connect the accelerometer sensor's cable to the Port 2
+	b) replace the sound sensor with compass sensor and connect the compass sensor's cable to Port 1
+	c) the stick for touching the touch sensor might needs to be removed to enable robot moving uphill
+	
+
+Build using appkernels=bbr/<projectname>
